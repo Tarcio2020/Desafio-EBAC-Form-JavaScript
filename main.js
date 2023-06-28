@@ -1,18 +1,23 @@
+const formularios = document.querySelectorAll('#form-maiorMenor');
+
+formularios[0].addEventListener('submit', function(e) {
+  e.preventDefault()
+  comparacao()
 
 
-form.addEventListener('submit', function(e) {
+  function comparacao () {
+    const campoA = document.querySelectorAll('#campA')
+    const campoB = document.querySelectorAll('#campB')
 
-    let um = document.getElementById('#a');
-    let dois = document.getElementById('#b');
-    
-    if(um>dois){
-        alert("sucess")
+    if (campoA >= campoB) {
+      console.log('ssssssssss')
+    } else {
+      console.log('nnnnnnnnn')
     }
-    else {
+  }
 
-      alert("not")
 
-    }
+
+
 })
-
 
