@@ -1,23 +1,33 @@
-const formularios = document.querySelectorAll('#form-maiorMenor');
+const formularios = document.getElementById('form-maiorMenor');
 
-formularios[0].addEventListener('submit', function(e) {
+
+
+formularios.addEventListener('submit', function(e) {
   e.preventDefault()
+  
   comparacao()
-
-
+  
+  const campoA = document.getElementById('campA')
+  const campoB = document.getElementById('campB')
+  
+  
+  
   function comparacao () {
-    const campoA = document.querySelectorAll('#campA')
-    const campoB = document.querySelectorAll('#campB')
+    
+    let maior = campoA.valeu >= campoB.value;
 
-    if (campoA >= campoB) {
-      console.log('ssssssssss')
+    if (maior) {
+    alert('sim')
     } else {
-      console.log('nnnnnnnnn')
-    }
-  }
 
+      alert('nnão')
+
+      }
+
+  }
 
 
 
 })
 
+console.log(formularios);
