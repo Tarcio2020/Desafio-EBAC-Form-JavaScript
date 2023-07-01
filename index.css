@@ -43,6 +43,14 @@ button {
   width: 300px;
 }
  
-input {
-  width: 300px;
+
+
+
+
+
+#p1 {
+  color: red;
+  font-size: 12px;
+  display: none;
+
 }
