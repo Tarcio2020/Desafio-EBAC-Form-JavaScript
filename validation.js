@@ -20,26 +20,26 @@ formulario.addEventListener('submit', function(e){
             console.log(sucess)
         }
 
-        function backFormClean() {
-            valorMaior.value = '';
-            valorMenor.value = '';
-        }
-    
+        
         if (valorMenor < valorMaior) {
             errorNumber()
             backFormClean()
             return;
         }
-
+        
         if (valorMenor > valorMaior) {
             sucessNumber()
             backFormClean() 
             alert('Formulário enviado com sucesso');
             return;
-
+            
         }
         
-
+        
+        function backFormClean() {
+           valorMaior.value = '';
+            valorMenor.value = '';
+        }
 
     }
 

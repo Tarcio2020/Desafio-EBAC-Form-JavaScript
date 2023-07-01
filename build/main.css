@@ -1,6 +1,5 @@
 * {
   margin: 0 auto;
-  padding: 0;
 }
 
 .cabecalho {
@@ -10,6 +9,12 @@
   text-align: center;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.container {
+  width: 370px;
+  height: 500px;
+  background-color: aqua;
 }
 
 header {
@@ -22,30 +27,36 @@ section {
   display: flex;
   justify-content: center;
   width: 400px;
-  height: 500px;
+  height: 900px;
   margin-top: 70px;
 }
 
-.container {
-  width: 360px;
-  height: 500px;
-  background-color: aqua;
+input {
+  width: 300px;
 }
 
-#a, #b {
-  margin-bottom: 10px;
-  border-radius: 7px;
-  width: 300px;
-  padding: 10px;
+#campA {
+  height: 35px;
+}
+
+#campB {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 35px;
 }
 
 button {
   width: 300px;
 }
 
-.form-maiorMenor {
-  display: flex;
-  justify-content: center;
+#p1 {
+  color: white;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  background-color: red;
+  width: 300px;
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
