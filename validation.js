@@ -8,10 +8,16 @@ formulario.addEventListener('submit', function(e){
     function validation() {
         const valorMaior = document.getElementById('campA').value;
         const valorMenor = document.getElementById('campB').value;
-        const error = document.getElementById('p1').style.display = 'block';
-
+        
+        
         function errorNumber() {
+            const error = document.getElementById('p1').style.display = 'block';
             console.log(error)
+        }
+        
+        function sucessNumber() {
+            const sucess = document.getElementById('p1').style.display = 'none';
+            console.log(sucess)
         }
 
         function backFormClean() {
@@ -21,13 +27,14 @@ formulario.addEventListener('submit', function(e){
     
         if (valorMenor > valorMaior) {
             errorNumber()
-            backFormClean() 
-           
-
-        } else {
-            alert('Campo B menor que o Campo A');
+            backFormClean()
+            return;
         }
 
+        if (valorMenor < valorMaior) {
+            sucessNumber()
+            backFormClean() 
+        }
         
 
 
