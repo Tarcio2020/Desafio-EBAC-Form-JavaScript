@@ -21,19 +21,22 @@ formulario.addEventListener('submit', function(e){
         }
 
         function backFormClean() {
-            valorMaior.value = ' ';
-            valorMenor.value = ' ';
+            valorMaior.value = '';
+            valorMenor.value = '';
         }
     
-        if (valorMenor > valorMaior) {
+        if (valorMenor < valorMaior) {
             errorNumber()
             backFormClean()
             return;
         }
 
-        if (valorMenor < valorMaior) {
+        if (valorMenor > valorMaior) {
             sucessNumber()
             backFormClean() 
+            alert('Formulário enviado com sucesso');
+            return;
+
         }
         
 
