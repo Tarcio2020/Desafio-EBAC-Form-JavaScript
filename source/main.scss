@@ -41,15 +41,18 @@
 #campA {
     
     height: 35px;
+    border-radius: 8px;
 }
 
 #campB {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     height: 35px;
+    border-radius: 8px;
 }
   
-  button {
+
+  button{
     width: 300px;
   }
 
@@ -58,8 +61,11 @@
     color: white;
     font-size: 12px;
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0px 0 10px 0;
     background-color: red;
     width: 300px;
+    padding-left: 10px;
     display: none;
+    border-radius: 4px;
+
   }

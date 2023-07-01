@@ -12,7 +12,10 @@ formulario.addEventListener('submit', function(e){
         
         function errorNumber() {
             const error = document.getElementById('p1').style.display = 'block';
+            const error2 = document.getElementById('campB').style.border ='red 2px solid';
             console.log(error)
+            console.log(error2)
+
         }
         
         function sucessNumber() {
@@ -23,23 +26,24 @@ formulario.addEventListener('submit', function(e){
         
         if (valorMenor < valorMaior) {
             errorNumber()
-            backFormClean()
+            Clean()
             return;
         }
         
         if (valorMenor > valorMaior) {
             sucessNumber()
-            backFormClean() 
             alert('Formulário enviado com sucesso');
+            Clean()
             return;
             
         }
         
-        
-        function backFormClean() {
-           valorMaior.value = '';
-            valorMenor.value = '';
+        function Clean() {
+            const valorMaior = document.getElementById('campA').value = '';
+            const valorMenor = document.getElementById('campB').value='';
+
         }
+     
 
     }
 
